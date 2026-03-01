@@ -15,10 +15,9 @@ body {
     /* Soft glass background */
     background: linear-gradient(
     to right,
-     #4b006e,
-    #2b0050,
-    #12002b,
-    #020024
+     #1F2A2E,
+    #2E4F56,
+    #3E6A72
   );
 }
 
@@ -223,3 +222,4 @@ h1, h2, h3, p {
     font-weight: 300;
     letter-spacing: 1px;
 }
+
