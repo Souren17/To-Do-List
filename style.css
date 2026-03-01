@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 50px;
+
+    /* Soft glass background */
+    background: linear-gradient(
+    to right,
+     #4b006e,
+    #2b0050,
+    #12002b,
+    #020024
+  );
+}
+
+/* HEADER */
+
+#header {
+    margin-top: 45px;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* MAIN CONTAINER */
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ADD TASK GLASS BOX */
+
+form {
+    display: flex;
+    width: 400px;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+
+form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: transparent;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+form input::placeholder {
+    color: rgba(0,0,0,0.5);
+}
+
+/* BUTTON */
+
+form button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: rgba(255,255,255,0.8);
+}
+
+/* TASK LIST CONTAINER */
+
+#myUnOrdList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.todo-list {
+    list-style: none;
+    width: 400px;
+}
+
+/* EACH TASK GLASS BOX */
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding: 15px 20px;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.todo:hover {
+    transform: translateY(-3px);
+}
+
+/* TEXT */
+
+.todo li {
+    flex: 1;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* BUTTONS */
+
+.check-btn,
+.delete-btn {
+    border: none;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-btn:hover {
+    background: #b2f2bb;
+}
+
+.delete-btn:hover {
+    background: #ffc9c9;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    form,
+    .todo-list {
+        width: 90%;
+    }
+}
+.task-box,
+.box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+h1, h2, h3, p {
+  color: #ffffff;
+}
+.task-box:hover,
+.box:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.15);
+}
+#title {
+    background: rgba(255, 255, 255, 0.05); /* very transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 15px 25px;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+}
+#datetime-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#datetime {
+    font-size: 0.95rem;
+     color: white;
+}
+#form,
+#myUnOrdList {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
